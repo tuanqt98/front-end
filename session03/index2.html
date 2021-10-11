@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            background-color: #ccc;
+            margin: 10px 25%;
+            padding: 15px;
+            border-radius: 5px;
+            
+        }
+       .form-group label {
+           display: inline-block;
+           width: 20%;
+           font-weight: bold;
+       } 
+       .form-group input[type="text"],
+       .form-group input[type="password"]{
+           width: calc(80% -15px);
+           padding: 5px;
+       }
+    </style>
+</head>
+
+<body>
+    <h1>Thẻ nhãn hiển thị </h1>
+    <hr>
+    
+    <hr>
+    <form action="" method="POST">
+        <div class="form-group">
+            <img src="../session01/images/phatra.jpg" alt="phongtra" width="100px">
+        </div>
+        <div class="form-group">
+            <label for="">Tài khoản</label>
+            <input type="text" name="taiKhoan" id="taiKhoan" placeholder="Tài khoản" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Mật khẩu</label>
+            <input type="password" name="matKhau" id="matKhau" placeholder="Mật khẩu" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for=""></label>
+            <input type="checkbox" name="ghiNho" id="ghiNho" placeholder="Ghi nhớ" class="form-control">
+            <label for="ghiNho">Ghi nhớ</label>
+        </div>
+        <div>
+            <label for=""></label>
+            <input type="submit" name="btSubmit" value="Đăng nhập">
+            <input type="reset" name="btnhapLai" value="Nhập lại">
+        </div>
+    </form>
+</body>
+
+</html>

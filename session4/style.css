@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    max-width: 1140px;
+    margin: auto;
+
+}
+
+.menu li {
+    padding: 1.6rem 1.6rem;
+    transition: all 3s ease-out;
+    position: relative;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+nav {
+    background-color: red;
+    box-shadow: 0 0 1rem #000000;
+}
+
+.menu li:hover {
+    background-color: #000;
+}
+
+.menu-child {
+    list-style: none;
+    position: absolute;
+    background-color: #000;
+    left: 0;
+    top: 100%;
+    display: none;
+    animation: menuChild 10s ease-out 1;
+   
+}
+
+.menu-child li {
+    white-space: nowrap;
+}
+
+.menu li:hover .menu-child {
+    display: block;
+   
+}
+
+@keyframes menuChild {
+    from {
+        top: calc (100% + 50px);
+    }
+
+    to {
+        top: 100%;
+    }
+}

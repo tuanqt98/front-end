@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html , body {
+    font-size: 62,5%;
+    background-color: #f3f3f3;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: bold;
+}
+h1{
+    font-size: 3.5rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2.5rem;
+}
+h4{
+    font-size: 2rem;
+}
+h5{
+    font-size: 1.75rem;
+}
+h6{
+    font-size: 1rem;
+}
+a, a:hover {
+    text-decoration: none;
+
+}
+img {
+    display: block;
+}
+.container {
+    margin:0 15%;
+    width: 70%;
+    position: relative;
+}
+
+/* css phần header  */

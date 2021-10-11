@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form in HTML5</title>
+</head>
+
+<body>
+    <h1>Form in html5</h1>
+    <pre>
+        -form sử dụng để thu thập thông tin từ người dùng 
+        - Tạo form => sử dụng thẻ form 
+        - Các thuộc tính :action , method (get ,post),,,
+        *Các điều khiển trên form 
+        Input:
+        type:Giá trị của thuộc tính có thể là:
+        ->text : mặc định => ô nhập văn bản 
+        ->password: nhập kiểu mật khẩu (*)
+        ->radio :nút chọn (chọn 1 trong nhiều khả năng lựa chọn)
+        ->checkbox: nút chọn (chọn nhiều khả năng)
+        ->submit : nút chọn (gửi dữ liệu trên form đến địa chỉ trong action)
+        ->reset: trả lại trạng thái ban đầu cho form
+        \
+        select: 
+        option 
+        textarea : nhập nội dung văn bản lớn 
+    </pre>
+
+    <hr>
+    <form name="frm" action="" method="POST">
+        <h1>Các kiểu thường dùng</h1>
+        <p>
+            Ô nhập văn bản :
+            <input type="text" name="ip1" id="ip1" placeholder="Nhập họ tên">
+        </p>
+        <p>
+            ô nhập mật khẩu
+            <input type="password" name="ip2" id="ip2" placeholder="Nhập mật khẩu">
+        </p>
+        <p>
+            Ô chọn (lựa chọn duy nhất)
+            <input type="radio" name="gioitinh" id="nam" checked> Nam <br>
+            <input type="radio" name="gioitinh" id="nu"> Nữ
+            <br>
+            <input type="radio" name="gioitinh" id="khac"> Khác
+        </p>
+        <p>
+            ô chọn nhiều lựa chọn khác nhau:
+            (checkbox) <br>
+            <input type="checkbox" name="ck1" id="ck1"> Bóng đá
+            <input type="checkbox" name="ck2" id="ck2"> Bóng bàn
+            <input type="checkbox" name="ck3" id="ck3"> Bóng bàn
+            <input type="checkbox" name="ck4" id="ck4"> Bóng bàn
+        </p>
+        <p>
+            Hộp chọn:
+            <select name="chon" id="tinhthanh">
+                <option value="">--Chọn tỉnh thành</option>
+                <option value="1">Hà Nội</option>
+                <option value="2">Quảng Ninh</option>
+                <option value="3">Thái Bình</option>
+
+            </select>
+        </p>
+        <p>
+            Nhập nội dung dài:
+            <textarea name="diaChi" id="diaCHi" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            Chọn ngày:
+            <input type="date" name="ngaySinh" id="ngaySinh">
+        </p>
+        <p>
+            Nhập số :
+            <input type="number" name="sl" id="sl" min="0" max="100">
+        </p>
+        <p>
+            Chọn số 
+            <input type="range" name="ip6" id="ip6" min="0" max="100">
+        </p>
+        <p>Chọn màu</p>
+        <input type="color" name="ipColor" id="">
+        <p>
+            <input type="file" name="select-file" id="">
+        </p>
+        <p>
+            <input type="submit" name="btGui" id="" value="Gửi dữ liệu">
+            <input type="" name="btXoa" id="" value="làm lại">
+        </p>
+    </form>
+</body>
+
+</html>
